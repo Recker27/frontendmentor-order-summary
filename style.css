@@ -4,9 +4,98 @@
   box-sizing: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+
 body {
   background-image: url(images/pattern-background-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  height: 96vh;
+  flex-direction: column;
+}
+
+.card {
+  width: 320px;
+  background-color: white;
+  border-radius: 18px;
+}
+
+.card-container {
+  width: 90%;
+
+  margin: 0 auto;
+}
+
+.header-image {
+  width: 100%;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+.card h1 {
+  text-align: center;
+  font-size: 22px;
+  padding: 22px 0;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+}
+
+.card-desc {
+  margin: 0 auto;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 28px;
+  line-height: 25px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  width: 85%;
+}
+
+.annual-plan {
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-music {
+  width: 25%;
+  padding: 15px;
+  width: 44px;
+  height: auto;
+}
+
+.pricing {
+  width: 50%;
+  align-items: center;
+  margin-left: 0.6rem;
+  margin-top: 0.4rem;
+}
+.pricing h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+
+.pricing p {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  margin-top: 0.2rem;
+}
+
+.annual-plan a {
+  width: 25%;
+  font-size: 14px;
+  font-weight: 700;
 }
